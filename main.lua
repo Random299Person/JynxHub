@@ -57,7 +57,7 @@ if game.PlaceId == 893973440 then
 
    --Player ESP
    local playerESP = {}
-   local ui_Visual_ESP_Players = ui_Visual_ESP:CreateDropdown({
+   local ui_Visual_ESP_Players = ui_Visual:CreateDropdown({
       Name = "Players",
       Options = {"Off", "Beast only", "All"},
       CurrentOption = {"Off"},
@@ -126,7 +126,7 @@ if game.PlaceId == 893973440 then
    --Computer ESP
    local computerESP = {}
    local ui_Visual_ESP_Computers
-   ui_Visual_ESP_Computers = ui_Visual_ESP:CreateDropdown({
+   ui_Visual_ESP_Computers = ui_Visual:CreateDropdown({
       Name = "Computers",
       Options = {"Off", "Hide hacked", "On"},
       CurrentOption = {"Off"},
