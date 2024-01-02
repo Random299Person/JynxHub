@@ -25,7 +25,7 @@ if not table.find(supportedGames, game.PlaceId) then
    return
 end
 
-local uiMAIN = Rayfield:CreateWindow({
+local Window = Rayfield:CreateWindow({
    Name = "JynxHub - " .. placeName,
    LoadingTitle = loadingText,
    LoadingSubtitle = "by the Jynx team",
