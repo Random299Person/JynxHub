@@ -1,5 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local MarketplaceService = game:GetService("MarketplaceService")
+local Players = game:GetService("Players")
 
 local placeId = game.PlaceId
 local placeName = MarketplaceService:GetProductInfo(game.PlaceId).Name
