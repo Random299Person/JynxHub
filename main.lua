@@ -4,7 +4,7 @@ local MarketplaceService = game:GetService("MarketplaceService")
 local placeId = game.PlaceId
 local placeName = MarketplaceService:GetProductInfo(game.PlaceId).Name
 local isJynx = jynx
-local loadingText = "JynxHub is loading"
+local loadingText = "by the Jynx team"
 if isJynx then
    loadingText = "Hello, fellow jynx-er!"
 end
@@ -27,8 +27,8 @@ end
 
 local Window = Rayfield:CreateWindow({
    Name = "JynxHub - " .. placeName,
-   LoadingTitle = loadingText,
-   LoadingSubtitle = "by the Jynx team",
+   LoadingTitle = "JynxHub v1.0 is loading",
+   LoadingSubtitle = loadingText,
    ConfigurationSaving = {
       Enabled = true,
       FolderName = "JynxHubBeta", -- Create a custom folder for your hub/game
@@ -53,7 +53,7 @@ local Window = Rayfield:CreateWindow({
 
 if game.PlaceId == 893973440 then
    local ui_Visual = Window:CreateTab("Visual", 13321848342) -- Title, Image
-   local ui_Visual_ESP = ui_Visual:CreateSection("ESP") -- Title, Image
+   local ui_Visual_ESP = ui_Visual:CreateSection("ESP")
 
    --Player ESP
    local playerESP = {}
